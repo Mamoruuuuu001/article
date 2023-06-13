@@ -1,0 +1,116 @@
+/* Add specific styles to match Real Madrid official website */
+nav.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+@media (min-width: 1000px) {
+    .navbar-brand {
+        width: 25%;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+}
+
+.nav-item.active::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -.3rem;
+    vertical-align: middle;
+    content: "";
+    border-right: .3rem solid transparent;
+    border-bottom: .3rem solid;
+    border-left: .3rem solid transparent;
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Adjust card style */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+.card-title a {
+    color: #000;
+    font-weight: bold;
+}
+
+.card-text small {
+    color: #777;
+}
+
+.card-img {
+    height: 100%;
+}
+
+.list-group-item {
+    border: none;
+}
+
+/* Override Bootstrap classes */
+.form-control.norder {
+    border: none;
+}
+
+.border-end-1 {
+    border-right: none;
+}
+
+.border-start-3 {
+    border-left: 3px solid #fff;
+}
+
+.bg-white {
+    background-color: #fff;
+}

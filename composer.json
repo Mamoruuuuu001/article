@@ -1,0 +1,8 @@
+{
+    "require": {
+        "intervention/image": "^2.7",
+        "php-ffmpeg/php-ffmpeg": "^1.1",
+        "smarty/smarty": "^4.3",
+        "jasongrimes/paginator": "~1.0"
+    }
+}
